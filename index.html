@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JusticeERP — The Ultimate Product to Discuss Your Future Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#090a0f',
+                            800: '#12141c',
+                            700: '#1a1d29',
+                            600: '#272b3c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-radial {
+            background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-gray-100 font-sans selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Notice Banner for Unbuilt Product -->
+    <div class="bg-gradient-to-r from-indigo-900 via-purple-900 to-dark-800 text-center py-2 px-4 text-xs font-medium text-indigo-200 border-b border-indigo-700/50">
+        <i class="fa-solid fa-triangle-exclamation mr-1.5 text-amber-400"></i> Notice: <span class="text-white font-semibold">JusticeERP is not built yet!</span> We are actively developing this product. Join our waitlist to be notified when the beta launches.
+    </div>
+
+    <header class="fixed top-10 left-0 right-0 z-50 bg-dark-900/85 backdrop-blur-md border-b border-dark-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-scale-balanced text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Justice<span class="text-indigo-400">ERP</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                <a href="#features" class="hover:text-white transition-colors">Planned Features</a>
+                <a href="#simulator" class="hover:text-white transition-colors">Future Plan AI</a>
+                <a href="#architecture" class="hover:text-white transition-colors">Architecture</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#waitlist" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-600/20 active:scale-95">
+                    Request Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-28">
+        <section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-36 bg-radial">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-dark-700/80 border border-dark-600 mb-8 backdrop-blur-sm">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-medium text-gray-300">JusticeERP Suite — The Ultimate Future Planning Product</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                        The Ultimate Product to <span class="text-gradient">Discuss Your Future Plans</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-400 mb-10 font-normal leading-relaxed">
+                        JusticeERP combines collaborative roadmap rooms, instant AI scenario forecasting, and robust enterprise security so leaders and teams can discuss, simulate, and lock in tomorrow's milestones today.
+                    </p>
+                    
+                    <div id="waitlist" class="max-w-md mx-auto">
+                        <div class="flex flex-col sm:flex-row gap-3 p-2 bg-dark-800 rounded-2xl border border-dark-700 shadow-2xl justify-center">
+                            <a href="#simulator" class="w-full px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm transition-all shadow-md active:scale-95 text-center">
+                                Try Future Plan Simulator Below
+                            </a>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4">JusticeERP is actively in development. Explore all planned product features below.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 lg:mt-24 max-w-5xl mx-auto">
+                    <div class="rounded-2xl bg-dark-800/90 border border-dark-700 p-3 glow-effect">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-dark-700/50 mb-3">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                            </div>
+                            <div class="text-xs text-gray-400 font-mono">justice-erp.app/workspace/future-plan-sandbox</div>
+                            <div class="text-xs text-indigo-400 font-medium"><i class="fa-solid fa-circle-dot text-emerald-400 mr-1"></i> Live Feature Sync</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
+                            <div class="bg-dark-900/60 p-4 rounded-xl border border-dark-700">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-semibold text-gray-400">ROOMS</span>
+                                    <i class="fa-solid fa-comments text-indigo-400"></i>
+                                </div>
+                                <div class="text-xl font-bold text-white">Threaded Discussions</div>
+                                <div class="text-xs text-emerald-400 mt-1"><i class="fa-solid fa-check mr-1"></i> Real-time presence</div>
+                            </div>
+                            <div class="bg-dark-900/60 p-4 rounded-xl border border-dark-700">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-semibold text-gray-400">SIMULATOR</span>
+                                    <i class="fa-solid fa-brain text-purple-400"></i>
+                                </div>
+                                <div class="text-xl font-bold text-white">AI Scenario Engine</div>
+                                <div class="text-xs text-indigo-400 mt-1"><i class="fa-solid fa-bolt mr-1"></i> Instant Synthesis</div>
+                            </div>
+                            <div class="bg-dark-900/60 p-4 rounded-xl border border-dark-700">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-semibold text-gray-400">SECURITY</span>
+                                    <i class="fa-solid fa-shield-halved text-pink-400"></i>
+                                </div>
+                                <div class="text-xl font-bold text-white">RBAC & E2EE</div>
+                                <div class="text-xs text-emerald-400 mt-1"><i class="fa-solid fa-lock mr-1"></i> Enterprise Grade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-dark-800/40 border-t border-dark-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-3">Planned Product Capabilities</h2>
+                    <h3 class="text-3xl font-bold text-white">Built for Comprehensive Future Planning</h3>
+                    <p class="text-sm text-gray-400 mt-2">Here is the full checklist of features engineered directly into JusticeERP to facilitate strategic discussions.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-comments text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">1. Real-Time Threaded Discussions</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Embed conversations directly within strategic milestones and roadmap documents so stakeholders can debate future plans contextually.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-user-shield text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">2. Role-Based Access Control (RBAC)</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Granular permissions ensuring sensitive enterprise roadmap discussions remain secure between executives, legal counsel, and technical leads.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-users-viewfinder text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">3. Live Presence & Cursors</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">See who is actively reviewing, commenting, or editing future plan scenarios in real-time across your organization.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-sliders text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">4. Trajectory Parameter Modeling</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Interactive inputs allowing leaders to test various strategic focus areas (e.g. Corporate Expansion, AI Workflow Automation, Firm Restructuring).</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">5. Instant AI Synthesis</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Automated prediction engines that calculate success probability, projected valuation uplift, and potential compliance friction within seconds.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-table-cells text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">6. Risk & Reward Matrix</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Quantitative analytics assessing the trade-offs of upcoming 3-to-5-year milestones with complete transparency.</p>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">7. Version-Controlled Future Plans</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Track how your organization's strategy evolves over quarters with immutable audit logs and rollback options.</p>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-file-arrow-down text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">8. Exportable Executive Summaries</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">One-click generation of board-ready reports outlining the outcomes of your future plan discussions.</p>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-shield-halved text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white mb-2">9. Enterprise Security & Compliance</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">End-to-end encryption combined with automated regulatory framework checks for ultimate peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulator" class="py-24 bg-dark-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-3">Live Scenario Simulator</h2>
+                    <h3 class="text-3xl font-bold text-white">Discuss Your Future Plans Using AI Synthesis</h3>
+                    <p class="text-sm text-gray-400 mt-2">Test out parameters from our planned module checklist and get instant forecast analytics right inside the page.</p>
+                </div>
+
+                <div class="max-w-3xl mx-auto bg-dark-800 rounded-2xl border border-dark-700 p-6 md:p-8 shadow-2xl">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">1. Select Strategic Focus Area</label>
+                            <select id="focusArea" class="w-full bg-dark-900 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500">
+                                <option value="expansion">Corporate Expansion & Multi-Region Growth</option>
+                                <option value="automation">AI Workflow Automation Integration</option>
+                                <option value="restructuring">Firm Restructuring & Equity Modernization</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">2. Define Primary 5-Year Milestone Target</label>
+                            <select id="milestoneTarget" class="w-full bg-dark-900 border border-dark-600 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500">
+                                <option value="revenue">Scale Annual Recurring Revenue by 300%</option>
+                                <option value="efficiency">Cut Operational Overhead by 40% via Software</option>
+                                <option value="market">Capture Top-Tier Enterprise Tier Clients</option>
+                            </select>
+                        </div>
+
+                        <button onclick="runSimulation()" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm transition-all shadow-lg active:scale-95">
+                            Run JusticeERP AI Scenario Synthesis
+                        </button>
+                    </div>
+
+                    <div id="simulationResult" class="mt-8 hidden p-6 rounded-xl bg-dark-900/95 border border-dark-700">
+                        <h4 class="text-base font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-sparkles text-indigo-400 mr-2"></i> JusticeERP Future Plan Analysis
+                        </h4>
+                        <p id="resultText" class="text-sm text-gray-300 leading-relaxed"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="py-24 bg-dark-800/40 border-t border-dark-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-wider text-purple-400 mb-3">Enterprise Architecture</h2>
+                    <h3 class="text-3xl font-bold text-white">Bank-Grade Security for Strategic Discussions</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="p-6 rounded-2xl bg-dark-800 border border-dark-700">
+                        <div class="text-indigo-400 text-lg font-bold mb-2"><i class="fa-solid fa-lock mr-2"></i> End-to-End Encryption</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">Keeping confidential business strategies 100% safe from unauthorized access at rest and in transit.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-dark-800 border border-dark-700">
+                        <div class="text-purple-400 text-lg font-bold mb-2"><i class="fa-solid fa-check-to-slot mr-2"></i> Compliance Integration</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">Automated checks ensuring upcoming enterprise shifts align seamlessly with regional and industry regulations.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-dark-800 border border-dark-700">
+                        <div class="text-pink-400 text-lg font-bold mb-2"><i class="fa-solid fa-laptop-code mr-2"></i> Sandbox Environment</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">Test-drive strategic scenarios in isolated version-controlled spaces before presenting to the board.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-24 bg-dark-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-3">Transparent Investment</h2>
+                    <h3 class="text-3xl font-bold text-white">Choose Your Organization's Plan</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Standard Plan -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border border-dark-700 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-2">Standard Room</div>
+                            <div class="text-3xl font-extrabold text-white mb-4">$49 <span class="text-sm font-normal text-gray-400">/ user / mo</span></div>
+                            <p class="text-sm text-gray-400 mb-6">Essential collaborative rooms and basic AI scenario forecasting for mid-size teams.</p>
+                            <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Real-Time Threaded Discussions</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Standard Parameter Modeling</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Version-Controlled Roadmaps</li>
+                            </ul>
+                        </div>
+                        <a href="#waitlist" onclick="triggerAlert(event)" class="w-full py-3 rounded-xl bg-dark-700 hover:bg-dark-600 text-white font-semibold text-sm text-center transition-all block">Get Started</a>
+                    </div>
+
+                    <!-- Enterprise Suite -->
+                    <div class="p-8 rounded-2xl bg-dark-800 border-2 border-indigo-500/80 flex flex-col justify-between glow-effect relative">
+                        <div class="absolute -top-3 right-8 px-3 py-1 rounded-full bg-indigo-600 text-[10px] font-bold text-white uppercase tracking-wider">Enterprise Choice</div>
+                        <div>
+                            <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Enterprise Suite</div>
+                            <div class="text-3xl font-extrabold text-white mb-4">$199 <span class="text-sm font-normal text-gray-400">/ user / mo</span></div>
+                            <p class="text-sm text-gray-400 mb-6">Full feature set with advanced compliance checks and dedicated strategy consultancy.</p>
+                            <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Advanced RBAC & E2EE Security</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Unlimited AI Scenario Modeling</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Dedicated Strategy Consultant</li>
+                            </ul>
+                        </div>
+                        <a href="#waitlist" onclick="triggerAlert(event)" class="w-full py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm text-center transition-all shadow-md block">Deploy Enterprise</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Notification for Unbuilt Status -->
+    <div id="statusModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden">
+        <div class="bg-dark-800 border border-dark-700 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl relative mx-4">
+            <div class="w-12 h-12 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-4 text-xl">
+                <i class="fa-solid fa-hammer"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">JusticeERP is Not Built Yet!</h3>
+            <p class="text-sm text-gray-400 mb-4">We are actively working on developing this product. We love your enthusiasm for our product!</p>
+            <p class="text-xs text-indigo-300 bg-indigo-950/60 p-3 rounded-xl border border-indigo-700/50 mb-6">
+                To show your love and support, mail us directly at: <br><strong class="text-white select-all">chowdhryshivan@gmail.com</strong>
+            </p>
+            <button onclick="closeModal()" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all">
+                Got it, thanks!
+            </button>
+        </div>
+    </div>
+
+    <footer class="bg-dark-900 border-t border-dark-700/50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <i class="fa-solid fa-scale-balanced text-indigo-400"></i>
+                <span class="font-semibold text-gray-300">JusticeERP</span> &copy; 2026. All rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function triggerAlert(event) {
+            event.preventDefault();
+            document.getElementById('statusModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('statusModal').classList.add('hidden');
+        }
+
+        function runSimulation() {
+            const focus = document.getElementById('focusArea').value;
+            const milestone = document.getElementById('milestoneTarget').value;
+            const resultBox = document.getElementById('simulationResult');
+            const resultText = document.getElementById('resultText');
+
+            let analysis = "";
+
+            if (focus === 'expansion' && milestone === 'revenue') {
+                analysis = "JusticeERP AI Synthesis: Prioritizing Corporate Expansion alongside multi-region revenue scaling yields a projected 285% valuation uplift within 24 months. Recommended action: activate threaded roadmap discussions across executive rooms immediately.";
+            } else if (focus === 'automation' && milestone === 'efficiency') {
+                analysis = "JusticeERP AI Synthesis: Integrating AI Workflow Automation to cut operational overhead by 40% achieves a 4.2x ROI. Automated compliance framework checks indicate zero regulatory friction.";
+            } else {
+                analysis = "JusticeERP AI Synthesis: Selected parameter configuration demonstrates robust cross-departmental alignment with a 96% success probability. Risk-reward matrix scores optimal path found.";
+            }
+
+            resultText.innerText = analysis;
+            resultBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
