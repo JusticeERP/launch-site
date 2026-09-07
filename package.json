@@ -2,10 +2,6 @@
 "name": "launch_page",
 "version": "1.0.0",
 "description": "High-conversion static launch page for modern SaaS products.",
-"scripts": {
-"dev": "npx serve .",
-"build": "echo 'Static site ready for deployment'"
-},
 "keywords": [
 "landing-page",
 "saas",
@@ -13,5 +9,4 @@
 "static"
 ],
 "author": "Founder",
-"license": "MIT"
 }
